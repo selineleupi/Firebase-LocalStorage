@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stilark.css">
+
+        <!--hentet fonten "Chango" fra Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
+        
+        <title>Regnemester</title>
+    </head>
+    <body>
+
+        
+        <!--lydeffekt for feil og riktig svar hentet fra pixabay.com, buzz-lyden har jeg kuttet litt-->
+        <audio id="feil">
+            <source src="audio/buzz.mov">
+        </audio>
+        <audio id="riktig">
+            <source src="audio/yay-6120.mp3">
+        </audio>
+
+        <div class="header">
+            <a href="index.html" id="tilbake">←Tilbake</a>
+            <h1>Mester i subtraksjon!</h1>
+        </div>
+
+        <!--lager div som skal inneholde selve regnespillet og gir de hver sin class slik ta jeg kan endre farge på skriften som gjelder i alle dokumentene-->
+            <div class="matte">
+                <h2 class="tall1">2</h2>
+                <h2 class="operasjon">-</h2>
+                <h2 class="tall2">1</h2>
+                <h2 class="erLik">=</h2>
+                <h2 class="ukjent">?</h2>
+
+                <div id="svar">
+                    <label>Svar:
+                        <input type="number" id="input">
+                    </label> <!--legger til input-element der brukeren kan skrive inn løsningen på regnestykket-->
+                </div>
+                <div>
+                    <button id="sjekk-sub" class="sjekk">Sjekk svar</button>
+                    <button class="nye-tall">Nytt regnestykke</button>
+                </div>
+                <h1 id="resultat"></h1>
+            </div>
+            <div>
+                <h3 id="rekord"></h3>
+                <h3 id="poeng"></h3>
+            </div>
+           
+
+        <script src="script.js"></script>
+    </body>
+</html>

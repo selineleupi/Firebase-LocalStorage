@@ -1,0 +1,69 @@
+<!DOCTYPE html> <!--inspirasjon hentet fra https://www.youtube.com/watch?v=Uw9wc5wm_mw , men endte med å løse det ganske annerledes-->
+<html lang="no">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stilark.css">
+
+        <!--hentet fonten "Chango" fra Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
+        
+        <title>Regnemester</title>
+    </head>
+    <body>
+
+        
+    
+
+        <div class="header">
+            <h1>RegneMester</h1>
+        </div>
+
+        <div class="hoved"> <!--linkene er rundt diven slik at hele diven skal være klikkbar-->
+            <a href="addisjon.html" class="link" id="pluss"><div><span>Addisjon</span></div></a>
+            <a href="subtraksjon.html" class="link" id="minus"><div><span>Subtraksjon</span></div></a>
+            <a href="multiplikasjon.html" class="link" id="gange"><div><span>Multiplikasjon</span></div></a>
+            <a href="divisjon.html" class="link" id="dele"><div><span>Divisjon</span></div></a>
+        </div>
+
+
+
+
+<br>
+<div id="omtale">
+    <h5>Skriv en omtale:</h5>
+    <div id="hoved"></div>
+    <label for="fornavn">Fornavn</label>
+    <input type="text" id="fornavn">
+
+    <label for="kommentar">Kommentar</label>
+    <input type="text" id="kommentar">
+    
+    <button id="publiser">
+        Publiser
+    </button>
+
+    <br>
+
+    
+</div>
+
+
+
+
+
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+
+
+        <script src="script-index.js"></script> <!--eget js til index-->
+    </body>
+</html>

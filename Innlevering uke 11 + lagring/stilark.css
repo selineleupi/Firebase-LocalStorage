@@ -1,0 +1,233 @@
+body {
+    text-align: center;
+    font-family: 'Chango';
+    margin: 0;
+}
+
+.tall1 { /*gir ulike farger til de ulike tegnene i regnestykkene*/
+    color: rgb(228, 146, 187);
+}
+
+.operasjon {
+    color: rgb(248, 134, 68);
+}
+
+.tall2 {
+    color: rgb(135, 171, 236);
+}
+
+.erLik {
+    color: rgb(255, 236, 130);
+}
+
+.ukjent {
+    color: rgb(79, 194, 131);
+}
+
+.hoved {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    /*auto-fit gjør at den tilpasser seg i bredden, minmax gjør at de kan endre bredde og når du kommer til en viss bredde vil de flytte seg til færre rader. ellers kunne vi skrevet feks repeat(auto-fit, 1fr) eller repeat(5, 1fr) som vil si 5 rader og 1 like stor del på hver av de*/
+    padding: 5px;
+    margin: 20px;
+}
+
+.sjekk { /*designer knappene*/
+    cursor: pointer; /*tydeliggjør at knappen kan klikkes på*/
+    background-color: rgb(255, 226, 226);
+    border: 0;
+    border-radius: 1.5rem;
+    color: #0d172a;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1;
+    padding: 0.3rem 0.7rem;
+    box-shadow: 0px 2px 3px rgba(102, 102, 102, 0.363);
+}
+
+.sjekk:hover {
+    background-color: #1e293b;
+    color: #fff;
+  }
+
+.nye-tall {
+    cursor: pointer;
+    background-color: rgb(255, 226, 226);
+    border: 0;
+    border-radius: 1.5rem;
+    color: #0d172a;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1;
+    padding: 0.3rem 0.7rem;
+    box-shadow: 0px 2px 3px rgba(102, 102, 102, 0.363);
+}
+
+.nye-tall:hover {
+  background-color: #1e293b;
+  color: #fff;
+}
+
+.link:hover {
+    background-color: rgb(104, 212, 131);
+    font-size: 50px;
+}
+
+.link:hover span { /*den opprinnelige teksten vises ikke ved hover, isteden vises et symbol for regneoperasjonen*/
+    display: none
+}
+  
+#pluss:hover:before {
+    content: "+"
+}
+
+#minus:hover:before {
+    content: "−"
+}
+
+#gange:hover:before {
+    content: "×"
+}
+
+#dele:hover:before {
+    content: ":"
+}
+
+.link {
+    text-decoration: none;
+    color:rgb(70, 23, 85);
+    
+    background-color: rgb(253, 110, 118);
+
+    height: 170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h1 {
+    color: mediumvioletred;
+}
+
+.header {
+    background-color: rgb(190, 205, 255);
+    padding: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#tilbake {
+    text-decoration: none;
+    color:rgb(70, 23, 85);
+    float: left;
+}
+
+#tilbake:hover{
+    font-style: italic;
+}
+
+.matte > h2 {
+   display: inline; /*plasserer skriften på samme linje*/
+   padding: 10px;
+}
+
+.matte {
+    margin: 30px;
+    padding: 50px;
+    height: 250px;
+}
+
+#svar {
+    margin: 50px;
+}
+
+label {
+    color: mediumvioletred;
+}
+
+#input {
+    border: none;
+    border-bottom: 3px solid rgb(70, 23, 85);
+}
+
+
+#resultat {
+    color:purple;
+    font-size: 20px;
+}
+
+h3 {
+    color:rgb(70, 23, 85);
+    float: left;
+    padding: 20px;
+}
+
+#omtale {
+    text-align: left;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 40px;
+}
+
+#omtale > label {
+    color: rgb(70, 23, 85);
+    margin-top: 10px;
+    
+}
+
+#omtale > input {
+    border: none;
+    border-bottom: 3px solid rgb(70, 23, 85);
+    width: 50%;
+}
+
+p {
+    color: black;
+    font-size: 80%;
+    margin-left: 10px;
+}
+
+h4 {
+    font-size: 90%;
+    color: gray;
+    padding: 0;
+}
+
+#publiser {
+    cursor: pointer; /*tydeliggjør at knappen kan klikkes på*/
+    background-color: rgb(255, 226, 226);
+    border: 0;
+    border-radius: 1.5rem;
+    color: #0d172a;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1;
+    padding: 0.3rem 0.7rem;
+    box-shadow: 0px 2px 3px rgba(102, 102, 102, 0.363);
+    width: 20%;
+    margin-top: 20px;
+}
+
+#publiser:hover {
+    background-color: #1e293b;
+    color: #fff;
+}
+
+h5 {
+    font-size: 1.25em;
+    color: rgb(97, 77, 153);
+}
+
+#hoved {
+    margin-left: 10px;
+}
